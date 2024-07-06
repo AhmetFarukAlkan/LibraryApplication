@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="458.0" prefWidth="572.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXML.MemberMainScreen">
+   <children>
+      <Label fx:id="LblWelcome" layoutX="95.0" layoutY="46.0" prefHeight="19.0" prefWidth="326.0" text="HoşGeldininz">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="MemberSettings" fitHeight="114.0" fitWidth="119.0" layoutX="101.0" layoutY="97.0" onMouseClicked="#ClickMemberSettings" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../İmages/user-avatar-icon-social-person-symbol-business-vector-illustration-web-member-isolated-background-231775060.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="106.0" layoutY="211.0" text="Kisısel Bilgiler">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="giveBook" fitHeight="114.0" fitWidth="142.0" layoutX="87.0" layoutY="248.0" onMouseClicked="#ClickGiveBook" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../İmages/istockphoto-176796510-612x612-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="115.0" layoutY="360.0" text="Kitap İade et">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="ShowBooks" fitHeight="104.0" fitWidth="144.0" layoutX="247.0" layoutY="102.0" onMouseClicked="#ClickShowBooks" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../İmages/indir-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="246.0" layoutY="211.0" text="KitaPLarInı Görüntüle">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="takeBook" fitHeight="114.0" fitWidth="119.0" layoutX="261.0" layoutY="240.0" onMouseClicked="#ClickTakeBook" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../İmages/623443_book_256x256-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="272.0" layoutY="360.0" text="Ödünç Kitap Al">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="Exit" fitHeight="114.0" fitWidth="104.0" layoutX="434.0" layoutY="240.0" onMouseClicked="#ClickExit" pickOnBounds="true">
+         <image>
+            <Image url="@../İmages/indir-removebg-previewExir.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="470.0" layoutY="360.0" text="Çıkış">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

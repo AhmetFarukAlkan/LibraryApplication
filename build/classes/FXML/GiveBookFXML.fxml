@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="516.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXML.GiveBook">
+   <children>
+      <ImageView fx:id="Exit" fitHeight="57.0" fitWidth="68.0" layoutX="659.0" layoutY="18.0" onMouseClicked="#ClickExit" pickOnBounds="true">
+         <image>
+            <Image url="@../İmages/indir-removebg-previewExir.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="48.0" layoutX="26.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../İmages/unnamed__1_-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txfldSearch" layoutX="68.0" layoutY="33.0" prefHeight="26.0" prefWidth="520.0" />
+      <Button fx:id="BtnSrch" layoutX="598.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#ClickBtnSearch" prefHeight="26.0" prefWidth="52.0" text="Ara" />
+      <ImageView fitHeight="100.0" fitWidth="81.0" layoutX="400.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../İmages/istockphoto-176796510-612x612-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="280.0" layoutY="440.0" text="Geri Ver">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="18.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="Giveit" arcHeight="5.0" arcWidth="5.0" fill="#ff000000" height="100.0" layoutX="255.0" layoutY="400.0" onMouseClicked="#ClickGiveit" opacity="0.44" smooth="false" stroke="#0045ff40" strokeType="INSIDE" width="235.0" />
+      <TableView fx:id="TblVwBooks" layoutX="16.0" layoutY="83.0" prefHeight="306.0" prefWidth="715.0">
+         <columns>
+            <TableColumn fx:id="ColumnId" prefWidth="32.799988746643066" sortable="false" text="İd" />
+            <TableColumn fx:id="ColumnBookName" prefWidth="112.0" text="Kitabın Adı" />
+            <TableColumn fx:id="ColumnAuthor" prefWidth="144.0" text="Yazar" />
+            <TableColumn fx:id="ColumnPageNumber" prefWidth="72.0" text="Sayfa Sayısı" />
+            <TableColumn fx:id="ColumnPublishDate" prefWidth="93.5999755859375" text="Basım Yılı" />
+            <TableColumn fx:id="ColumnPublisher" prefWidth="92.80001831054688" text="Yayın Evi" />
+            <TableColumn fx:id="ColumnDateOfIssue" prefWidth="79.2000732421875" text="Teslim Alma" />
+            <TableColumn fx:id="DateOfIssueDeliveryDate" prefWidth="84.79998779296875" text="Teslim Verme" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

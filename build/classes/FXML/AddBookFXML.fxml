@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="505.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXML.AddBook">
+   <children>
+      <Label layoutX="122.0" layoutY="17.0" text="Kitap Ekle">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="31.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="114.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../İmages/a-book-vector-20321004-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="73.0" layoutY="197.0" prefHeight="19.0" prefWidth="109.0" text="Kitap Adı">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtfldBookName" layoutX="214.0" layoutY="194.0" />
+      <Label layoutX="75.0" layoutY="231.0" prefHeight="19.0" prefWidth="109.0" text="Yazar Adı">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="268.0" text="Sayfa Sayısı">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="303.0" prefHeight="19.0" prefWidth="109.0" text="Basım Yılı">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtfldNameAuthor" layoutX="214.0" layoutY="228.0" />
+      <TextField fx:id="txtfldPageNumber" layoutX="214.0" layoutY="265.0" />
+      <Label layoutX="79.0" layoutY="336.0" prefHeight="19.0" prefWidth="109.0" text="Yayın Evi">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="372.0" prefHeight="19.0" prefWidth="109.0" text="Adet">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtfldNamePublisher" layoutX="214.0" layoutY="333.0" />
+      <TextField fx:id="txtfldNumber" layoutX="214.0" layoutY="369.0" />
+      <ImageView fx:id="addBook" fitHeight="69.0" fitWidth="75.0" layoutX="125.0" layoutY="398.0" onMouseClicked="#ClickAddBook" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../İmages/623443_book_256x256-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="115.0" layoutY="472.0" text="Kitap Ekle">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="Exit" fitHeight="75.0" fitWidth="58.0" layoutX="248.0" layoutY="405.0" onMouseClicked="#ClickExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../İmages/indir-removebg-previewExir.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="258.0" layoutY="472.0" text="Çıkış">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="DtPicekrPublish" layoutX="213.0" layoutY="299.0" prefHeight="26.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

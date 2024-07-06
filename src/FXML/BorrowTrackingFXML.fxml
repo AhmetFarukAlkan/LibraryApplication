@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="449.0" prefWidth="588.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXML.BorrowTracking">
+   <children>
+      <TableView fx:id="TblVwLoanedOut" layoutX="18.0" layoutY="61.0" prefHeight="306.0" prefWidth="554.0">
+         <columns>
+            <TableColumn fx:id="ColumnId" prefWidth="32.799988746643066" sortable="false" text="İd" />
+            <TableColumn fx:id="ColumnMemberName" prefWidth="112.0" text="Üye Kullanıcı Adı" />
+            <TableColumn fx:id="ColumnBookName" prefWidth="120.0" text="Kitap Adı" />
+            <TableColumn fx:id="ColumnDateOfIssue" prefWidth="101.5999755859375" text="Veriliş Tarihi" />
+            <TableColumn fx:id="DateOfIssueDeliveryDate" prefWidth="84.0" text="Teslim Tarihi" />
+            <TableColumn fx:id="ColumnStatu" prefWidth="104.80001831054688" text="Durum" />
+         </columns>
+      </TableView>
+      <Label layoutX="28.0" layoutY="27.0" text="Ödünç Alınan Kitaplar">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="BtnListBooks" layoutX="305.0" layoutY="389.0" mnemonicParsing="false" onMouseClicked="#ClickListBooks" text="Tüm Ödünç Kitapları Listele" />
+      <Button fx:id="btnExtendDate" layoutX="164.0" layoutY="389.0" mnemonicParsing="false" onMouseClicked="#ClickExtendDate" text="Teslim Tarihini Uzat" />
+      <ImageView fx:id="Exit" fitHeight="46.0" fitWidth="52.0" layoutX="525.0" layoutY="14.0" onMouseClicked="#ClickExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../İmages/indir-removebg-previewExir.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

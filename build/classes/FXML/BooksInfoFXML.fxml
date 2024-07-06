@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="764.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXML.BooksInfo">
+   <children>
+      <ImageView fx:id="Exit" fitHeight="57.0" fitWidth="68.0" layoutX="673.0" layoutY="17.0" onMouseClicked="#ClickExit" pickOnBounds="true">
+         <image>
+            <Image url="@../İmages/indir-removebg-previewExir.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="TblVwBooks" layoutX="30.0" layoutY="77.0" prefHeight="306.0" prefWidth="711.0">
+         <columns>
+            <TableColumn fx:id="ColumnId" prefWidth="32.799988746643066" sortable="false" text="İd" />
+            <TableColumn fx:id="ColumnBookName" prefWidth="112.0" text="Kitabın Adı" />
+            <TableColumn fx:id="ColumnAuthor" prefWidth="144.0" text="Yazar" />
+            <TableColumn fx:id="ColumnPageNumber" prefWidth="72.0" text="Sayfa Sayısı" />
+            <TableColumn fx:id="ColumnPublishDate" prefWidth="93.5999755859375" text="Basım Yılı" />
+            <TableColumn fx:id="ColumnPublisher" prefWidth="92.80001831054688" text="Yayın Evi" />
+            <TableColumn fx:id="ColumnDateOfIssue" prefWidth="79.2000732421875" text="Teslim Alma" />
+            <TableColumn fx:id="DateOfIssueDeliveryDate" prefWidth="84.79998779296875" text="Teslim Verme" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="33.0" fitWidth="48.0" layoutX="30.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../İmages/unnamed__1_-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txfldSearch" layoutX="72.0" layoutY="32.0" prefHeight="26.0" prefWidth="521.0" />
+      <Button fx:id="BtnSrch" layoutX="607.0" layoutY="31.0" mnemonicParsing="false" onMouseClicked="#ClickBtnSearch" prefHeight="26.0" prefWidth="52.0" text="Ara" />
+   </children>
+</AnchorPane>

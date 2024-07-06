@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="421.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXML.Login">
+   <children>
+      <ImageView fitHeight="435.0" fitWidth="298.0" layoutX="-8.0" layoutY="-7.0" pickOnBounds="true">
+         <image>
+            <Image url="@../İmages/posterler-eski-kutuphane-kitaplik.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="365.0" layoutY="130.0" prefHeight="40.0" prefWidth="158.0" text="Kütüphaneye Giris">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="318.0" layoutY="189.0" prefHeight="40.0" prefWidth="90.0" text="Kullanıcı Adı">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtfldNick" layoutX="420.0" layoutY="196.0" />
+      <Label layoutX="318.0" layoutY="245.0" prefHeight="40.0" prefWidth="90.0" text="sıfre">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="12.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="pasword" layoutX="421.0" layoutY="253.0" />
+      <ImageView fitHeight="69.0" fitWidth="81.0" layoutX="405.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../İmages/cikartmalar-kitap-yigini-beyaz-arka-plan-uzerinde-izole.jpg-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="496.0" layoutY="409.0" prefHeight="18.0" prefWidth="102.0" text="Ahmet Faruk Alkan ©">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="8.0" />
+         </font>
+      </Label>
+      <Button fx:id="BtnRegister" layoutX="387.0" layoutY="306.0" mnemonicParsing="false" onMouseClicked="#ClickBtnRegister" text="Kayıt" />
+      <Button fx:id="BtnSingin" layoutX="455.0" layoutY="306.0" mnemonicParsing="false" onMouseClicked="#ClickSingin" text="Giriş" />
+   </children>
+</AnchorPane>
